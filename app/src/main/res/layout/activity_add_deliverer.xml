@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_deliverer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mukhter.deattmanager.AddDeliverer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel2">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:elevation="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+
+            >
+            <include
+                android:id="@+id/inc3_toolbar"
+                layout="@layout/toolbar"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="#ffff"
+            android:id="@+id/rel1"
+            android:layout_marginTop="52dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="298dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/nametxt"
+                android:background="@drawable/edittext_bottomline"
+                android:textColor="#000"
+                android:inputType="textPersonName"
+                android:hint=" Joseph Doe"
+                android:layout_below="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_marginTop="7dp" />
+
+
+            <EditText
+                android:layout_width="298dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/password"
+                android:background="@drawable/edittext_bottomline"
+                android:textColor="#000"
+                android:inputType="textPassword"
+                android:hint=""
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/passwTxt"
+                android:layout_alignStart="@+id/textView3" />
+
+            <TextView
+                android:text="Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwTxt"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/nametxt"
+                android:layout_alignStart="@+id/nametxt" />
+
+            <TextView
+                android:text="Phone Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/phoneNotxt"
+                android:layout_below="@+id/password"
+                android:layout_alignStart="@id/textView3" />
+
+
+            <EditText
+                android:layout_width="298dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/phoneno"
+                android:background="@drawable/edittext_bottomline"
+                android:textColor="#000"
+                android:inputType="phone"
+                android:hint=" 08142865267"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/phoneNotxt"
+                android:layout_alignStart="@+id/textView3" />
+
+            <TextView
+                android:text="Bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneno"
+                android:layout_alignStart="@id/textView3"
+                android:layout_marginTop="10dp"
+                android:id="@+id/banktextView" />
+
+
+            <EditText
+                android:layout_width="298dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/banktxt"
+                android:background="@drawable/edittext_bottomline"
+                android:textColor="#000"
+                android:inputType="textPersonName"
+                android:hint=" Access Bank"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/banktextView"
+                android:layout_alignStart="@+id/textView3" />
+
+            <TextView
+                android:text="Account Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/banktxt"
+                android:layout_alignStart="@+id/banktxt"
+                android:layout_marginTop="13dp"
+                android:id="@+id/AccNotextView" />
+
+            <EditText
+                android:layout_width="298dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/Accno"
+                android:background="@drawable/edittext_bottomline"
+                android:textColor="#000"
+                android:inputType="phone"
+                android:hint=" 0694518155"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/AccNotextView"
+                android:layout_alignStart="@+id/textView3" />
+
+
+            <Button
+                android:text="Save"
+                android:background="@drawable/rounded_btn"
+                android:id="@+id/save_btn"
+                android:textColor="#ff4501"
+                android:textAllCaps="false"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
